@@ -1,0 +1,120 @@
+
+
+
+
+    print("top first xx");
+
+    if(mid.isEmpty){
+      //wrong speing
+      reset();
+      if(first_start&&len.isEven){
+        first_point.value=first_point.value+1;
+        await Pop('Wrong Spelling',
+            '$second_name you made a wrong spelling so $first_name has gain a point');
+
+        first_start=true;
+        second_start=false;
+        info.value='$first_name it is your turn';
+        //letters must change here maybe a function
+      }else if(first_start&&len.isOdd){
+        second_point.value=second_point.value+1;
+
+        await Pop('Wrong Spelling',
+            '$first_name you made a wrong spelling so $second_name has gain a point');
+        first_start=false;
+        second_start=true;
+        info.value='$second_name it is your turn';
+        //change letter
+      }else if(second_start&&len.isEven){
+        second_point.value=second_point.value+1;
+
+        await Pop('Wrong Spelling',
+            '$first_name you made a wrong spelling so $second_name has gain a point');
+        first_start=false;
+        second_start=true;
+        info.value='$second_name it is your turn';
+      }else{
+        first_point.value=first_point.value+1;
+        await Pop('Wrong Spelling',
+            '$second_name you made a wrong spelling so $first_name has gain a point');
+
+        first_start=true;
+        second_start=false;
+        info.value='$first_name it is your turn';
+      }
+
+    }else{
+
+      // crrect spelling
+
+      if(finish(mid, fun.value)){
+        //finish spelling
+
+        mid=[];
+        list.remove(fun.value);
+        reset();
+        if(first_start&&len.isEven){
+          // second win
+          fun.value='';
+          first_start=false;
+          second_start=true;
+          second_point.value=second_point.value+1;
+          await Pop('Congratulations',
+              '$second_name entered the last letter of a correctly spelt word. A point is gained');
+          info.value='$second_name it is your turn';
+        }else if(first_start&&len.isOdd){
+          //first win
+          fun.value='';
+          first_point.value=first_point.value+1;
+          first_start=true;
+          second_start=false;
+          info.value='$first_name it is your turn';
+          await Pop('Congratulations',
+              '$first_name entered the last letter of a correctly spelt word. A point is gained');
+        }else if(second_start&&len.isEven){
+          //first win
+          fun.value='';
+          first_point.value=first_point.value+1;
+          first_start=true;
+          second_start=false;
+          info.value='$first_name it is your turn';
+          await Pop('Congratulations',
+              '$first_name entered the last letter of a correctly spelt word. A point is gained');
+        }else{
+          //second win
+          fun.value='';
+          first_start=false;
+          second_start=true;
+          second_point.value=second_point.value+1;
+          await Pop('Congratulations',
+              '$second_name entered the last letter of a correctly spelt word. A point is gained');
+          info.value='$second_name it is your turn';
+        }
+      }else{
+        // continue spelling
+        if(first_start&&fun.value.length.isEven){
+          info.value='$first_name it is your turn';
+        }else if(first_start&&fun.value.length.isOdd){
+          info.value='$second_name it is your turn';
+        }else if(second_start&&fun.value.length.isEven){
+          info.value='$second_name it is your turn';
+        }else{
+          info.value='$first_name it is your turn';
+        }
+        letter.value=[];
+        List jj=[];
+        len=fun.value.length;
+
+        for(String x in mid){
+
+          jj.add(x.substring(len,len+1));
+        }
+        letter.value=jj;
+
+        mid=[];
+      }
+    }
+
+
+
+   com.android.tools.build:gradle:4.1.0

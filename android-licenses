@@ -1,0 +1,22 @@
+Doctor summary (to see all details, run flutter doctor -v):
+[√] Flutter (Channel stable, 3.7.7, on Microsoft Windows [Version 10.0.19045.2604], locale en-GH)
+[√] Windows Version (Installed version of Windows is version 10 or higher)
+[X] Android toolchain - develop for Android devices
+    X Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/docs/get-started/install/windows#android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, please use
+      `flutter config --android-sdk` to update to that location.
+
+[X] Chrome - develop for the web (Cannot find Chrome executable at .\Google\Chrome\Application\chrome.exe)
+    ! Cannot find Chrome. Try setting CHROME_EXECUTABLE to a Chrome executable.
+[X] Visual Studio - develop for Windows
+    X Visual Studio not installed; this is necessary for Windows development.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+[√] Android Studio (version 2021.3)
+[√] Connected device (2 available)
+[√] HTTP Host Availability
+
+! Doctor found issues in 3 categories.
