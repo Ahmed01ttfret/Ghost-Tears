@@ -1,16 +1,19 @@
-# ghost_game_tears
+# Ghost Tears 👻
 
-A new Flutter project.
+This is an old project of mine that I decided to finally put out there on the internet. It’s a simple word-prediction game built with **Flutter**, created back when I was first exploring the framework and moving away from Python/KivyMD.
 
-## Getting Started
+## The Concept
+The game challenges players to predict the next letter of a word based on a given category. It’s a test of both vocabulary and intuition.
 
-This project is a starting point for a Flutter application.
+### Features
+* **Categories:** Includes groups of words like:
+    * Names of Countries 🌍
+    * Major Cities 🏙️
+    * Football Teams ⚽
+* **Game Modes:**
+    * **1 Player:** Test yourself against the word bank.
+    * **2 Player:** Local multiplayer mode to compete with a friend.
 
-A few resources to get you started if this is your first Flutter project:
+## Why it's here
+I've moved on to more complex projects in environmental and data science, but this was a foundational step for me. I wanted to preserve the source code and the logic I used during my early days of mobile development.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
