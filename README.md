@@ -15,4 +15,5 @@ The game challenges players to predict the next letter of a word based on a give
     * **2 Player:** Local multiplayer mode to compete with a friend.
 
 ## Why it's here
-I've moved on to more complex projects in environmental engineering and data science, but this was a foundational step for me. I wanted to preserve the source code and the logic I used during my early days of mobile development.
+I've moved on to more complex projects in environmental and data science, but this was a foundational step for me. I wanted to preserve the source code and the logic I used during my early days of mobile development.
+
